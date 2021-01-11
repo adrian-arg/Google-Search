@@ -90,6 +90,8 @@ def driver(request):
 
     yield driver
 
+    # TODO Add take screenshot on failed test functionality
+
     driver.quit()
 
 
