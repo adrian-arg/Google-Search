@@ -57,7 +57,7 @@ class TestGoogleSearch:
     @pytest.mark.parametrize(
         "search_parameter, expected_result_position, destination_page_title",
         [
-            ("The name of the wind", 1, "The Name of the Wind - Patrick Rothfuss")
+            ("The name of the wind", 1, "Patrick Rothfuss - The Books")
         ]
     )
     def test_c000005_click_on_first_result_link(
