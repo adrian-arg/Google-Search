@@ -1,0 +1,7 @@
+.pytest_cache
+.idea/*
+*.pyc
+venv/*
+reports/*
+results.xml
+geckodriver.log
