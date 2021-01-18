@@ -24,6 +24,7 @@ def pytest_addoption(parser):
     parser.addini(name="page_load_timeout", type="string", default=None, help="WebDriver Page Load Timeout")
     parser.addini(name="headless", type="bool", default=True, help="Run tests in headless mode")
     parser.addini(name="page_load_strategy", type="string", default="none", help="WebDriver page load strategy")
+    parser.addini(name="webdriver_parameters", type="string", default=None, help="WebDriver Parameters")
     parser.addini(name="options_arguments", type="linelist", default=None, help="WebDriver arguments")
     parser.addini(name="explicit_wait", type="args", default=None, help="WebDriver arguments")
 

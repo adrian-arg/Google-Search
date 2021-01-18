@@ -8,5 +8,6 @@ class SearchResultsLocators:
     SEARCH_BTN = (By.CSS_SELECTOR, "button[type='submit']")
     SEARCH_RESULTS_LIST = (
         By.XPATH,
-        "//div[@class='g']/div[@class='rc']/div[@class='yuRUbf']/a[not(ancestor::div[@class='related-question-pair'])]"
+        "//div[@class='yuRUbf']/a[not(ancestor::div[@class='related-question-pair']) " +
+        "and not(ancestor::div[starts-with(@class,'mod')])]"
     )

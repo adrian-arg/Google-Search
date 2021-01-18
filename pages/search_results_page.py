@@ -40,4 +40,3 @@ class SearchResultsPage(PageBase):
         self.click_on_element(element=result)
         self.wait_for_url_to_change_to(expected_url=destination_url)
 
-

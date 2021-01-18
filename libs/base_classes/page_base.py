@@ -40,7 +40,7 @@ class PageBase(object):
 
     def find_elements(self, locator, explicit_wait=True):
         if explicit_wait:
-            return self.explicit_wait.until(EC.visibility_of_all_elements_located(locator))
+            return self.explicit_wait.until(EC.visibility_of_any_elements_located(locator))
         else:
             return self.driver.find_elements(*locator)
 
